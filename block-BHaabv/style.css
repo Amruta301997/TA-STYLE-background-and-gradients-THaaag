@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans" , sans-serif;
+    font-size: 14px;
+    flex: auto;
+    
+}
+
+h1{
+    font-size: 40px;
+    top: 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+h2{
+    color:grey ;
+    font-size: 26px;
+    top: -100px;
+    position: relative;
+
+}
+
+h3{
+    font-size: 15px;
+    position: relative;
+    margin-top: 10px;
+    color: grey;
+
+}
+
+p{
+    position: relative;
+    color: rgb(80, 78, 78);
+}
+
+img{
+    width: 30px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.attribution a{
+    color: grey;
+}
+
+/*header*/
+header{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(194, 193, 248);
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+hr{
+    display: none;
+}
+
+.color-toggle{
+    float: right;
+    top: -83px;
+    position: relative;
+    width: 180px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header-wrapper{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    
+    
+    
+}
+
+.toggle{
+margin-top: auto;
+margin-bottom: auto;
+font-weight: bold;
+color: grey;
+font-size: 19px;
+flex: auto;
+}
+
+.switch{
+    position: relative;
+    display: flex;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    height: 32px;
+}
+
+/*.switch input{
+    opacity: 0;
+    width: 0;
+    height:0 ;
+
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    transition: 4s;
+
+}
+
+.slider::before{
+    position:absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 6px;
+    bottom: 3px;
+    background-color: rgb(36, 35, 35);
+    transition: .4s;
+
+}*/
+
+/*kpis*/
+
+.kpi-card{
+    background-color: rgb(216, 215, 248);
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    max-width: 1280px;
+    display: flex;
+    
+}
+.kpi-wrapper{
+
+    justify-content: space-evenly;
+    
+    flex-wrap: wrap;
+    
+    top: -120px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    float: left;
+}
+
+.card-top-facebook{
+    width: 300px;
+    height: 5px;
+    background-color:rgb(27, 176, 245);
+    border-radius: 8px 8px 0 0;
+
+}
+.card-top-twitter{
+    width: 300px;
+    height: 5px;
+    background-color:rgb(27, 176, 245);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-top-instagram{
+    width: 300px;
+    height: 5px;
+    background-image:linear-gradient(to right, #ffbd67, #e74f98);
+    border-radius: 8px 8px 0 0;
+}
+.card-top-youtube{
+    width: 300px;
+    height: 5px;
+    background-color:rgb(247, 11, 11);
+    border-radius: 8px 8px 0 0;
+}
+.kpi-card-top{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    padding-top: 20px;
+}
+
+.icon{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.handle{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.icon{
+    text-align: center;
+    padding-right: 10px;
+}
+.kpi{
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+
+}
+.measure{
+    color: grey;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-align: center;
+    top: -20px;
+    position: relative;
+}
+.delta{
+    text-align: center;
+
+}
+.up{
+    color: green;
+    font-weight: bold;
+}
+.down{
+    color: red;
+    font-weight: bold;
+}
+
+/*overview dashboard*/
+.overview-header{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.overview-wrapper{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+    display: flex;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.kpi-small{
+    width: 300px;
+    background-color:  rgb(216, 215, 248);
+    height: 150px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.overview-kpis{
+    align-content: space-evenly;
+    width: 100%;
+    
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-viewa{
+    padding-left: 40px;
+    padding-top: 34px;
+    color: gray;
+    font-size: 16px;
+}
+
+.logo{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.views{
+    padding-left: 40px;
+    padding-top: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.movement{
+    padding-top: 5px;
+   text-align: right;
+    padding-right: 30px;
+}
+
+@media (max-width: 1355px) {
+    h1{
+        margin-left: 20px;
+    }
+    h2{
+        margin-left: 20px;
+    }
+    h3{
+        margin-left: 20px;
+    }
+    .color-toggle{
+        margin-right: 20px;
+    }
+    
+}
+
+@media  (max-width: 700px) {
+    h1{
+        margin-left: 20px;
+        font-size: 29px;
+        transition: ease-in-out 0.5s;
+        padding-right: 10px;
+    } 
+    .color-toggle{
+        top: 30px;
+        float: left;
+        transition: ease-in-out 0.5s;
+        padding-right: 10px;
+    }
+    .kpi-wrapper{
+        top: -30px;
+        transition: ease-in-out 0.5s;
+    }
+    hr{
+        display: block;
+        width: 90%;
+        top: 20px;
+        margin-left: 20px;
+    }
+    h2{
+        top: 0px;
+        padding-left: 20px;
+        padding-bottom: 70px;
+
+    }
+    .overview-kpis{
+        top: -80px;
+    }
+}
+
+@media (max-width:640px){
+    .kpi-card{
+        width: 350px;
+    }
+    .kpi-small{
+        width: 350px;
+    }
+    .card-top-facebook{
+        width: 350px;
+    }
+    .card-top-twitter{
+        width: 350px;
+    }
+    .card-top-instagram{
+        width: 350px;
+    }
+    .card-top-youtube{
+        width: 350px;
+    }
+}
